@@ -17,7 +17,7 @@ To generate an SSH key pair, follow these steps in Git Bash:
 1. **Open Git Bash**.
 2. Run the following command:
 
-   ```sh
+   ```shit config --global user.email "your_email@example.com"
    ssh-keygen -t ed25519 -C "your_email@example.com"
    ```
    
@@ -29,7 +29,7 @@ To generate an SSH key pair, follow these steps in Git Bash:
    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
    ```
 
-3. After running the command, you will see a prompt:git config --global user.email "your_email@example.com"
+3. After running the command, you will see a prompt:
 
    ```
    Enter a file in which to save the key (/c/Users/YourName/.ssh/id_ed25519):
