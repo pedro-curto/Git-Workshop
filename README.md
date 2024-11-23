@@ -22,7 +22,6 @@ To generate an SSH key pair, follow these steps in Git Bash:
    ```
    
    - Replace `"your_email@example.com"` with the email address associated with your GitHub account (**this is important**)
-   - Replace `"your_email@example.com"` with the email address associated with your GitHub account (**this is important**)
      
    - If your system doesn’t support it, you may have to use `rsa` like this:
 
@@ -30,7 +29,6 @@ To generate an SSH key pair, follow these steps in Git Bash:
    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
    ```
 
-3. After running the command, you will see a prompt:git config --global user.email "your_email@example.com"
 3. After running the command, you will see a prompt:git config --global user.email "your_email@example.com"
 
    ```
@@ -40,10 +38,8 @@ To generate an SSH key pair, follow these steps in Git Bash:
    - Press **Enter** to save the key to the default location (`/c/Users/YourName/.ssh`).
 
 4. Next, it will prompt you to set a **passphrase**. You can just press **Enter** to leave it empty (I always do this).
-4. Next, it will prompt you to set a **passphrase**. You can just press **Enter** to leave it empty (I always do this).
 
 ## Step 4: Start the SSH Agent
-Now that you’ve generated an SSH key, you need to add it to the * *SSH agent** to manage your keys.
 Now that you’ve generated an SSH key, you need to add it to the * *SSH agent** to manage your keys.
 
 1. In Git Bash, run the following command to start the SSH agent:
@@ -120,4 +116,4 @@ You may want to configure Git to use your GitHub account information globally on
    git config --global user.email "your_email@example.com"
    ```
 
-- Now that you're ready, head on to [Practical.md](https://github.com/pedro-curto/Git-Workshop/blob/main/README.md) to start the exercises!
+- Now that you're ready, head on to [Practical.md](https://github.com/pedro-curto/Git-Workshop/blob/main/Practical.md) to start the exercises!
