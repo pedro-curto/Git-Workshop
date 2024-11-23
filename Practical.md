@@ -24,22 +24,32 @@ To clone this repository, follow these steps:
      ```
 
 ### Step 2: Make Changes to the Cloned Repository
+
+1. **Create your own branch**:
+    - Create a new branch to work on your changes:
+      ```sh
+      git checkout -b feature/<your-name>
+      ```
+    - This command creates a new branch called `feature/<your-name>` and switches to it.
+    - This isn't a good naming convention, but it's fine for this exercise.
+
+
 1. **Create a New File**:
-   - Inside the `Git-Workshop` folder, create a new file called `hello-git.txt`:
+   - Inside the `Git-Workshop` folder, create a new file called `hello-git_<your-name>.txt`:
      ```sh
-     touch hello-git.txt
+     touch hello-git_<your-name>.txt
      ```
    - You can also create the file using a text editor like **VSCode**. You can use Git Bash inside VSCode, which is what I would use if I used Windows
 
    - Add some content to the file, for example:
      ```
-     This is a new file added to the Hello-World project.
+     This was created by <your-name>.
      ```
 
 2. **Stage the File**:
-   - Add `hello-git.txt` to the staging area:
+   - Add `hello-git_<your-name>.txt` to the staging area:
      ```sh
-     git add hello-git.txt
+     git add hello-git_<your-name>.txt
      ```
    - Run `git status` to confirm that the file is staged.
 
@@ -47,7 +57,7 @@ To clone this repository, follow these steps:
 1. **Commit the Changes**:
    - Commit the staged changes with a message:
      ```sh
-     git commit -m "feat: add hello-git.txt with sample content"
+     git commit -m "feat: add hello-git_<your-name>.txt"
      ```
 
 2. **Push Changes to GitHub**:
