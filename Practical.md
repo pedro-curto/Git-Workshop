@@ -7,7 +7,7 @@ In this section, we’ll learn how to **clone a repository**, make a small chang
 To clone this repository, follow these steps:
 
 1. Go to [GitHub's Git Tutorial repository](https://github.com/pedro-curto/Git-Workshop)
-   - Copy the URL by clicking on the **Code** button and copying the SSH link (e.g., `git@github.com:octocat/Hello-World.git`)
+   - Copy the URL by clicking on the **Code** button and copying the SSH link (`git@github.com:pedro-curto/Git-Workshop.git`)
 
 2. **Clone the Repository**:
    - In Git Bash, navigate to the folder where you want to clone the repository. Use the `cd` command, for example:
@@ -30,6 +30,10 @@ To clone this repository, follow these steps:
       ```sh
       git checkout -b feature/<your-name>
       ```
+   - For example, for me:
+     ```sh
+     git checkout -b feature/pedrocurto
+     ```
     - This command creates a new branch called `feature/<your-name>` and switches to it.
     - This isn't a good naming convention, but it's fine for this exercise.
 
