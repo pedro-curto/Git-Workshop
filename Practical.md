@@ -149,3 +149,81 @@ In this section, we will create our own Git repository, add some files, and **pu
    - You should see the commit history, including the commit you just made.
 
 - Questions?
+
+## Last Part: Fixing a Merge Conflict
+- Going back to the Git Tutorial repository we cloned earlier, we will simulate a merge conflict and resolve it. To do so, we will have two volunteers make changes to the same file (`a.py`) and try to push them back to the repository. These are the instructions for the volunteers:
+
+1. **Checkout to the branch that you previously created for yourself (`feature/<your-name>`)**:
+   ```sh
+   git checkout feature/<your-name>
+   ```
+
+2. **Edit the a.py file's print statement in line 7**:
+   - Change the print statement to print the factorial of something else.
+   - For example, Volunteer 1:
+     ```python
+     print(factorial(10))
+     ```
+   - And Volunteer 2:
+     ```python
+     print(factorial(20))
+     ```
+
+3. **Stage, commit, and push the changes**:
+   - Stage the changes:
+     ```sh
+     git add a.py
+     ```
+   - Commit the changes:
+     ```sh
+     git commit -m "feat: updated factorial value in a.py"
+     ```
+   - Push the changes:
+     ```sh
+     git push
+     ```
+
+4. **Merge the changes back to the main branch**:
+  **Volunteer 1** goes first:
+  ```sh
+  git checkout main 
+  ```
+  
+  ```sh
+  git merge feature/<your-name>
+  ```
+
+  - He will succeed, as he is the first to push the changes.
+
+  **Volunteer 2** goes next:
+  ```sh
+  git checkout main
+  ```
+
+  ```sh
+  git merge feature/<your-name>
+  ```
+
+  - The output that you will get will resemble this:
+  ```
+  Auto-merging a.py
+  CONFLICT (content): Merge conflict in a.py
+  Automatic merge failed; fix conflicts and then commit the result.
+  ```
+
+  - This means that there is a **merge conflict** in the `a.py` file. We need to manually open it, and fix the conflict:
+  ![alt text](image.png)
+
+  - We need to decide if we accept the left changes (Volunteer 1's changes) or the right changes (Volunteer 2's changes), or a mix of both.
+
+  - When we finally decide, we simply commit:
+  ```sh
+  git commit -m "solved merge conflict"
+  ```
+
+  - And we push:
+  ```sh
+  git push
+  ```
+
+  - The commit history will now reflect both commits from the merges, and the commit that solved the merge conflict itself. It's solved!
