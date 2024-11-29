@@ -6,3 +6,4 @@ def factorial(n):
 
 print(factorial(10))
 print("bu cota")
+print("A")
