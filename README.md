@@ -1,5 +1,15 @@
 # Git Tutorial
 
+## Repository Content
+- This repository contains the content for a Git Workshop I gave at TFC.
+- The content is divided into these files:
+  - **Git Presentation.pdf**: The slides that I presented during the workshop
+  - **presentation_content.md**: A lot of info that I talked about during the workshop, and more
+  - **Practical.md**: Exercises to get familiar with Git
+  - **guiagit.pdf**: A guide with everything and more to get started and learn Git
+
+- The rest of this README specifies how to setup Git on Windows, since the majority of users had Windows. For Linux, it's pretty straightforward given the distro, generally just get the package from the package manager and you probably have a bash console already. Any questions, message me.
+
 ## Git Setup on Windows
 
 ## Step 1: Install Git for Windows
